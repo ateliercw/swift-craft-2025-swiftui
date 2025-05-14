@@ -1,0 +1,95 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "(%lld, %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "(%1$lld, %2$lld)"
+          }
+        }
+      }
+    },
+    "%lld lines" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld line"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld lines"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Adaptive layout" : {
+
+    },
+    "Alignment Guides" : {
+
+    },
+    "Boxes" : {
+
+    },
+    "Color (blue)" : {
+
+    },
+    "Color (red)" : {
+
+    },
+    "Corner Badge" : {
+
+    },
+    "Custom" : {
+
+    },
+    "Default" : {
+
+    },
+    "Horizontal" : {
+
+    },
+    "Inset" : {
+
+    },
+    "Layout" : {
+
+    },
+    "Layout guides" : {
+
+    },
+    "Layouts" : {
+
+    },
+    "Less" : {
+
+    },
+    "More" : {
+
+    },
+    "Reacting to scroll events" : {
+
+    },
+    "Scrolling" : {
+
+    },
+    "This is item %lld" : {
+
+    },
+    "View that Fits" : {
+
+    }
+  },
+  "version" : "1.0"
+}

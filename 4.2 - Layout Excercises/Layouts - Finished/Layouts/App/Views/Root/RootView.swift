@@ -11,19 +11,24 @@ struct RootView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Container") {
+                Section("Layouts") {
                     NavigationLink("Layouts") {
                         LayoutsView()
                     }
                     NavigationLink("Boxes") {
                         BoxesView()
                     }
+                    NavigationLink("Layout guides") {
+                        AlignmentGuidesView()
+                    }
+                    NavigationLink("Adaptive layout") {
+                        ViewThatFitsView()
+                    }
                 }
-                NavigationLink("Scrolling") {
-                    Text("Scrolling")
-                }
-                NavigationLink("Adaptive layout") {
-                    Text("Fitting")
+                Section("Scrolling") {
+                    NavigationLink("Reacting to scroll events") {
+                        ScrollingView()
+                    }
                 }
             }
             .navigationTitle(Text("Layouts"))

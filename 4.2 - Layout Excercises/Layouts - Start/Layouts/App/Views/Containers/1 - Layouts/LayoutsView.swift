@@ -17,22 +17,7 @@ struct LayoutsView: View {
         ScrollViewReader { proxy in
             ScrollView(selectedLayout.axes) {
                 layout {
-                    ForEach(Array(0..<rowCount), id: \.self) { row in
-                        GridRow {
-                            ForEach(Array(0..<colCount), id: \.self) { col in
-                                Color.random
-                                    .frame(minWidth: 64, minHeight: 64)
-                                    .overlay {
-                                        switch selectedLayout {
-                                        case .grid:
-                                            Text("(\(row), \(col))")
-                                        case .horizontal, .vertical:
-                                            Text("\((row * colCount) + col)")
-                                        }
-                                    }
-                            }
-                        }
-                    }
+                    colorViews
                 }
                 .id(scrollID)
             }
@@ -62,12 +47,8 @@ struct LayoutsView: View {
 private extension LayoutsView {
     var layout: AnyLayout {
         switch selectedLayout {
-        case .vertical:
-            AnyLayout(VStackLayout(spacing: 0))
         case .horizontal:
             AnyLayout(HStackLayout(spacing: 0))
-        case .grid:
-            AnyLayout(GridLayout(horizontalSpacing: 0, verticalSpacing: 0))
         }
     }
 
@@ -80,26 +61,32 @@ private extension LayoutsView {
         .pickerStyle(.segmented)
     }
 
+    private var colorViews: some View {
+        ForEach(Array(0..<rowCount), id: \.self) { row in
+            GridRow {
+                ForEach(Array(0..<colCount), id: \.self) { col in
+                    Color.random
+                        .frame(minWidth: 64, minHeight: 64)
+                        .overlay {
+                            Text("(\(row), \(col))")
+                        }
+                }
+            }
+        }
+    }
+
     enum TestLayout: Hashable, Identifiable, CaseIterable {
         var id: Self { self }
         case horizontal
-        case vertical
-        case grid
 
         var label: LocalizedStringKey {
             switch self {
             case .horizontal: "Horizontal"
-            case .vertical: "Vertical"
-            case .grid: "Grid"
             }
         }
 
         var axes: Axis.Set {
             switch self {
-            case .grid:
-                [.vertical, .horizontal]
-            case .vertical:
-                    .vertical
             case .horizontal:
                     .horizontal
             }
