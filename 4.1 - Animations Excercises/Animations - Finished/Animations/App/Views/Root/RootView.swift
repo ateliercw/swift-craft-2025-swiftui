@@ -11,11 +11,17 @@ struct RootView: View {
     var body: some View {
         NavigationStack {
             List {
+                NavigationLink("Animations") {
+                    AnimationsView()
+                }
                 NavigationLink("Reacting to scroll events") {
-                    ScrollingView()
+                    ScrollTransitionsView()
+                }
+                NavigationLink("Parallax scrolling") {
+                    ParallaxScrollingView()
                 }
             }
-            .navigationTitle(Text("Animations"))
+            .navigationTitle(Text("Interaction"))
             .listStyle(.grouped)
         }
     }

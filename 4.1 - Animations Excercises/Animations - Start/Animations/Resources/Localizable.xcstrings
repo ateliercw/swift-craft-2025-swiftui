@@ -1,0 +1,48 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Animations" : {
+
+    },
+    "Explicit Animations" : {
+
+    },
+    "Implicit Animations" : {
+
+    },
+    "Interaction" : {
+
+    },
+    "Match move Animations" : {
+
+    },
+    "Parallax scrolling" : {
+
+    },
+    "Parallax Scrolling" : {
+
+    },
+    "Reacting to scroll events" : {
+
+    },
+    "Scroll Transitions" : {
+
+    },
+    "Section %lld" : {
+
+    },
+    "This is item %lld" : {
+
+    },
+    "Toggle" : {
+
+    },
+    "Toggle all" : {
+
+    },
+    "Transitions" : {
+
+    }
+  },
+  "version" : "1.0"
+}
