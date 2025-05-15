@@ -1,0 +1,84 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld attendees" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld attendee"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld attendees"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld presenters" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld presenter"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld presenters"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Add notes" : {
+
+    },
+    "Attendees" : {
+
+    },
+    "Done" : {
+
+    },
+    "Edit notes" : {
+
+    },
+    "Has power strips" : {
+
+    },
+    "Has Wifi" : {
+
+    },
+    "None" : {
+
+    },
+    "Notes" : {
+
+    },
+    "Rating" : {
+
+    },
+    "Room" : {
+
+    },
+    "Session Info" : {
+
+    }
+  },
+  "version" : "1.0"
+}
