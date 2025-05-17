@@ -82,4 +82,5 @@ Package.resolved
 .swiftpm/
 .build-cache/
 xcschememanagement.plist
-UserInterfaceState.xcuserstate
+*.xcworkspacedata
+*.xcuserstate
