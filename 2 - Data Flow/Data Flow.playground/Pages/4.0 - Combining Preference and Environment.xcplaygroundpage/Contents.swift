@@ -26,15 +26,14 @@ struct AlignedLabelWidthPreferenceKey: PreferenceKey {
 // To set the preference key, we create
 struct WidthReader<Key: PreferenceKey>: ViewModifier where Key.Value == CGFloat? {
     init(key: Key.Type) {}
+    @State private var width: CGFloat?
 
     func body(content: Content) -> some View {
         content
-            .background {
-                GeometryReader { proxy in
-                    Color.clear
-                        .preference(key: AlignedLabelWidthPreferenceKey.self, value: proxy.size.width)
-                }
+            .onGeometryChange(for: CGFloat.self, of: \.size.width) { update in
+                    width = update
             }
+            .preference(key: AlignedLabelWidthPreferenceKey.self, value: width)
     }
 }
 

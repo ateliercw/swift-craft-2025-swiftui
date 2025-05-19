@@ -14,5 +14,3 @@ import PlaygroundSupport
  `Environment` and `EnvironmentObject` aren't the right place to inject dependencies into them, because the environment isn't available in 'init' for a `View`, it won't become available until the view is placed in the view tree. So dependencies for your view models need to injected some other way.
 
  */
-
-//: [Next](@next)
