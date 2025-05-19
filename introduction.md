@@ -20,7 +20,6 @@
 
 - How long have you been working with Swift?
 - What's the thing you miss about AppKit / UIKit in SwiftUI?
-- What's the craziest bug you've seen in SwiftUI / Xcode recently?
 
 ---
 
@@ -28,9 +27,9 @@
 
 - Informal, feel free to interrupt
 - Handout with swift Playgrounds with text + code, follow along and try things out
-- Hands on sample project, with snapshots at the start of each chapter
+- Hands on sample project, each section is a separate project with start / end states
 
-skiba.dev/swiftcraft
+**`skiba.dev/swiftcraft`**
 
 ---
 
