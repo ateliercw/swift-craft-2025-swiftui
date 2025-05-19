@@ -183,5 +183,3 @@ PlaygroundPage.current.setLiveView(
  Attempting to alter the visual appearance of a styled component will **not** take precedence (for the same modifiers) over its `Style`. This means that no matter how far down the hierarchy we declare the style, it will be used first, before any other modifiers are applied.
  */
 
-//: [Next](@next)
-

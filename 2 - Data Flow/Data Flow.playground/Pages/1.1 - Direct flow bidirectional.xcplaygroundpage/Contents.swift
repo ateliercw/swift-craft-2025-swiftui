@@ -21,7 +21,7 @@ struct Child: View {
     }
 }
 
-/*
+/*:
  If you want to store and change a value inside a view, using '@State' is required. It's a property wrapper which stores the value when the view struct is re-created, and triggers a view update if the value that it's storing changes.
 
  `@State` values should be `private` as they should not be modified from outside the view. If you need a value that needs to be managed by the parent, then you should use a `@Binding`.

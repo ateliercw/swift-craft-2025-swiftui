@@ -140,5 +140,3 @@ PlaygroundPage.current.setLiveView(
  
  Try playing with multiple values on line `103` and see what happens. Also, try removing it. It almost feels like dark magic, doesn't it?!
  */
-
-//: [Next](@next)

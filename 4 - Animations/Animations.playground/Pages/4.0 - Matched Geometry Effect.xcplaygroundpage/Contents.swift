@@ -62,3 +62,5 @@ struct MatchedGeometryEffectView: View {
 }
 
 PlaygroundPage.current.setLiveView(MatchedGeometryEffectView())
+
+//: [Next](@next)

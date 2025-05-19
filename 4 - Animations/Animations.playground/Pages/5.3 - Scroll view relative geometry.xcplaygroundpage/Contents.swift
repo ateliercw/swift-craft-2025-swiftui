@@ -42,5 +42,3 @@ struct PositionTrackingView: View {
 }
 
 PlaygroundPage.current.setLiveView(PositionTrackingView())
-
-//: [Next](@next)

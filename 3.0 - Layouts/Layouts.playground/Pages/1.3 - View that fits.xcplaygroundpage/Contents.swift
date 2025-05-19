@@ -3,10 +3,11 @@
 import SwiftUI
 import PlaygroundSupport
 
-/*:
+/*: # ViewThatFits
+ 
  One of the newer additions to SwiftUI is `ViewThatFits`, which will swap out views based on content fitting.
 
- this can be used to either adapt you content to different window sizes at run time, or to present alternate layouts based on content fitting.
+ This can be used to either adapt you content to different window sizes at run time, or to present alternate layouts based on content fitting.
  */
 
 struct FittingView: View {

@@ -16,6 +16,8 @@ struct CustomValue: EnvironmentKey {
 
 //: Then we extend `EnvironmentValues` to add the new key
 extension EnvironmentValues {
+//    @Entry var customValue: Int?
+    
     var customValue: Int? {
         get { self[CustomValue.self] }
         set { self[CustomValue.self] = newValue }

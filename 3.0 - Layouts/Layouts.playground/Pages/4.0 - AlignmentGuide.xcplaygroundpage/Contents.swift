@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-/*: AlignmentGuide
+/*: # AlignmentGuide
  
  Remember `NSLayoutAnchor`? `AlignmentGuide` is his distant modern, lightweight uncle.
  
