@@ -1,5 +1,5 @@
 //
-//  ViewThatFitsView.swift
+//  ViewThatFitsLines.swift
 //  Layouts
 //
 //  Created by Michael Skiba on 14/05/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ViewThatFitsView: View {
+struct ViewThatFitsLines: View {
     let texts = [
         "All Systems Red, by Martha Wells",
         "The Murderbot Diaries, Book 1\nPublished in 2017",
@@ -38,30 +38,9 @@ private struct TextFittingView: View {
     @State private var textHeight: CGFloat?
 
     var body: some View {
-        VStack(alignment: .trailing) {
-            ViewThatFits {
-                Text(text)
-                if !expanded {
-                    Text(text)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .lineLimit(lineLimit)
-                }
-            }
-            .frame(
-                maxWidth: .infinity,
-                maxHeight: expanded ? nil : limitedHeight,
-                alignment: .leading
-            )
-
-            if let limitedHeight, let textHeight, limitedHeight < textHeight {
-                Button(expanded ? "Less" : "More") {
-                    expanded.toggle()
-                }
-                .contentTransition(.opacity)
-                .buttonStyle(.borderless)
-            }
-        }
+        Text(text)
         .overlay {
+            // These read the limited and full height of the text, which lets you know if the text is clipping.
             Text(text)
                 .lineLimit(lineLimit)
                 .hidden()
@@ -84,6 +63,6 @@ private struct TextFittingView: View {
 
 #Preview {
     NavigationStack {
-        ViewThatFitsView()
+        ViewThatFitsLines()
     }
 }

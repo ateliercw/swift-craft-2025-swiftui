@@ -21,7 +21,7 @@ struct RootView: View {
                     AlignmentGuidesView()
                 }
                 NavigationLink("Adaptive layout") {
-                    ViewThatFitsView()
+                    ViewThatFitsLines()
                 }
             }
             .navigationTitle(Text("Layouts"))
