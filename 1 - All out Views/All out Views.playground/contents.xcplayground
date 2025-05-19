@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Intro'/>
+        <page name='1.0 - @ViewBuilder'/>
+        <page name='1.1 - Multiple child views'/>
+        <page name='1.2 - Multiple return types'/>
+        <page name='1.2.1 - Usages'/>
+        <page name='1.2.2 - Optional Views'/>
+        <page name='2.0 - Why not to use AnyView'/>
+        <page name='3.0 - Under the hood'/>
+        <page name='4.0 - ViewModifier'/>
+        <page name='4.1 - ViewModifier with State'/>
+        <page name='4.2 - ViewModifier order'/>
+    </pages>
+</playground>
